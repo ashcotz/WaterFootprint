@@ -1,0 +1,72 @@
+<DOCTYPE! html>
+<head>  
+	<title> Water Footprint </title>
+	  <link rel="stylesheet" href="honorsprog.css">
+</head>
+
+<div id="header">
+		<head><h1>Find the Water Footprint of Your Food!</h1><head>
+</div>
+
+<!--code for the sidebar that contains the navigation to informational sites-->
+
+<div id="sidebar">
+	<h2>Click for information about...</h2>
+	<p><ul>
+		<li><a href="http://www.water.siemens.com/en/about_us/Pages/Water_Footprint.aspx">What is a Water Footprint?</a></li>
+		<li><a href="http://worldwildlife.org/threats/water-scarcity">Water Scarcity</a></li>
+		<li><a href="http://www.unep.org/dewa/vitalwater/jpg/0221-waterstress-EN.jpg">Water Scarcity Around the World</a></li>
+		<li><a href="http://www.waterfootprint.org/?page=files/FAQ_Why_act_and_how">Why is it Important?</a></li>
+		<li><a href="http://environment.nationalgeographic.com/environment/freshwater/embedded-water/">More on the Water Footprint of Products</a></li>
+	</ul></p>
+</div>
+
+<!--code for the actual information retrieval part of site-->
+
+<div id="main">
+	<b>
+	<p> Use the drop down menus to select a food product
+	    and see how much water it took to raise, harvest, produce, and ship!
+	</p>
+	
+<!--form for the food list-->	
+<form>
+Select what you ate:
+<select id="foodList" onchange="foodChoice()">
+  <option></option>
+  <option>Beef</option>
+  <option>Chicken</option>  
+  <option>Pork</option>
+  <option>Lamb</option>
+  <option>Goat</option>
+  <option>Barley</option>
+  <option>Wheat</option>  
+  <option>Rice</option>
+  <option>Bread</option>
+  <option>Potato</option>
+  <option>Apple</option>
+  <option>Orange</option>
+  <option>Corn</option> 
+</select>
+
+<!--code for the verification box-->
+
+<p>You selected: <input type="text" id="food" size="20"></p>
+
+<!--code for the button that links to js function-->
+	
+	<button onclick="myFunction ()">Find Water Footprint!</button>
+	
+
+</form>
+</b>
+</div>
+
+<body>
+
+	
+<script src="honorsproj.js"></script>
+
+</body>
+
+</html>
